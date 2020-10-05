@@ -14,7 +14,7 @@ test/
 ### Clone the repo and install the dependencies.
 
 ### Open command prompt and execute the below commands
-git clone https://github.com/BonnierNews/bnu-developer-assessment/
+git clone https://github.com/Yashaswi-Gowda/bonnier-news.git
 cd bnu-developer-assessment
 
 ### Install the node dependencies:
