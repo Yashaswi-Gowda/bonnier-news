@@ -15,4 +15,18 @@ app.get('/news', function (req, res) {
     });
 });
 
+app.get('/news/search', function(req, res) {
+    var searchParameter = req.query["key"];
+    processor.getNews(searchParameter).then(function(result) {
+        res.send(result);
+    });
+  
+});
+
+app.get('/news/latestHour', function(req, res) {
+    processor.getLatestHourNews().then(function(result) {
+        res.send(result);
+    });  
+});
+
 app.listen(port, () => console.log(`Bonnier API is listening at http://localhost:${port}/`));
